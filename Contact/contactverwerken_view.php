@@ -7,17 +7,16 @@
     <?php require_once('contact_verwerken.php'); ?>
 </head>
 <body>
-<nav class="py-2 bg-body-tertiary border-bottom">
+<nav class="py-3 bg-white">
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
-            <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Over ons</a></li>
-            <li class="nav-item"><a href="./onze-villas.html" class="nav-link link-dark px-2">Onze villa's</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link link-dark px-2">Contact</a></li>
+            <li class="nav-item"><a href="../Homepagina/index.html" class="nav-link link-dark px-2 fs-5" aria-current="page">Jonah</a></li>
         </ul>
         <ul class="nav">
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Inloggen</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Registeren</a></li>
+            <li class="nav-item"><a href="../Homepagina/index.html" class="nav-link link-dark px-2 fs-5" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="../Introductie/intro.html" class="nav-link link-dark px-2 fs-5" aria-current="page">Wie ben ik</a></li>
+            <li class="nav-item"><a href="../Projecten/projecten.html" class="nav-link link-dark px-2 fs-5" aria-current="page">Projecten</a></li>
+            <li class="nav-item"><a href="../Contact/contact.html" class="nav-link link-dark px-2 fs-5 active" aria-current="page">Contact</a></li>
         </ul>
     </div>
 </nav>

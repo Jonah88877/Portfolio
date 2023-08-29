@@ -10,7 +10,7 @@ if(isset($_POST["submit"])){
     $email = $_POST["email"];
     $vraag = $_POST["vraag"];
 
-    $to = '88877@glr.nl';
+    $to = '088877@glr.nl';
     $subject = 'Contactformulier ingevuld';
     $message = "Naam: $naam\nAdres: $adres\nTelefoonnummer: $telefoonnummer\nE-mail: $email\nVraag: $vraag";
     $headers = "From: $email\r\nReply-To: $email\r\n";
@@ -18,7 +18,7 @@ if(isset($_POST["submit"])){
     if (mail($to, $subject, $message, $headers)) {
         echo "<script>alert('Uw bericht is verzonden.');</script>";
     } else {
-        echo "<script>alert('Uw bericht kon niet worden verzonen. Probeer het later opnieuw!');</script>";
+        echo "<script>alert('Uw bericht kon niet worden verzonden. Probeer het later opnieuw!');</script>";
     }
 
     $query = "INSERT INTO contactgegevens (Naam, Adres, Telefoonnummer, Email, Vraag) VALUES ('$naam', '$adres', '$telefoonnummer', '$email', '$vraag')";

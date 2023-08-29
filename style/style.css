@@ -1,0 +1,13 @@
+body {
+    background-image: url("../imgs/18410.jpg");
+}
+
+.active {
+    color: #7976D3;
+    pointer-events: none;
+}
+
+.cardb {
+    width: 20rem;
+    background-color: #C6C6C6;
+}
