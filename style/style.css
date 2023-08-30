@@ -11,3 +11,20 @@ body {
     width: 20rem;
     background-color: #C6C6C6;
 }
+
+.foto {
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.courier {
+    font-family: "Rockwell";
+}
+
+nav {
+    background: rgb(242,242,242);
+    background: linear-gradient(0deg, rgba(242,242,242,0.6363139005602241) 0%, rgba(198,198,198,1) 100%);
+}

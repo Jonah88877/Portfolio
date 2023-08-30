@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <title>Projecten</title>
     <link href="../style/style.css" rel="stylesheet">
+    <script src="../script/script.js"></script>
 </head>
 <body>
 <nav class="py-3 bg-white">
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
+            <img src="../imgs/088877.jpeg" alt="foto" class="foto">
             <li class="nav-item"><a href="../Homepagina/index.html" class="nav-link link-dark px-2 fs-5" aria-current="page">Jonah</a></li>
         </ul>
         <ul class="nav">
@@ -20,6 +22,64 @@
         </ul>
     </div>
 </nav>
+<div class="container">
+    <h1 class="text-center">Project toevoegen</h1>
+    <form id="cardForm">
+        <div class="mb-3 w-50">
+            <label for="cardTitel" class="form-label">Titel:</label>
+            <input type="text" class="form-control" id="cardTitel" name="cardTitel" required>
+        </div>
+        <div class="mb-3 w-50">
+            <label for="cardBesch" class="form-label">Beschrijving:</label>
+            <textarea class="form-control" id="cardBesch" name="cardBesch" rows="3" required></textarea>
+        </div>
+        <div class="mb-3 w-50">
+            <label for="buttonLink" class="form-label">Link:</label>
+            <input type="url" class="form-control" id="buttonLink" name="buttonLink" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Toevoegen</button>
+    </form>
+    <div class="row mt-3" id="cardContainer"></div>
+    <div class="row">
+        <p class="h2 text-center courier">Mijn Projecten:</p>
+        <div class="col-md-6">
+            <div class="card w-50 mb-3">
+                <img src="../imgs/18410.jpg" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Titel</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque beatae</p>
+                    <a href="#" class="btn btn-primary">Naar het project</a>
+                </div>
+            </div>
+            <div class="card w-50">
+                <img src="../imgs/18410.jpg" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Titel 2</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque beatae</p>
+                    <a href="#" class="btn btn-primary">Naar het project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card w-50 mb-3">
+                <img src="../imgs/18410.jpg" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Titel 3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque beatae</p>
+                    <a href="#" class="btn btn-primary">Naar het project</a>
+                </div>
+            </div>
+            <div class="card w-50">
+                <img src="../imgs/18410.jpg" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Titel 4</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque beatae</p>
+                    <a href="#" class="btn btn-primary">Naar het project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
