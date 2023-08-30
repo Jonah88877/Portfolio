@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
+<<<<<<< HEAD
         let Titel = document.getElementById("cardTitel").value;
         let Beschrijving = document.getElementById("cardBesch").value;
         let Link = document.getElementById("buttonLink").value;
@@ -18,6 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
             '</div></div>';
 
         cardContainer.insertAdjacentHTML('beforeend', cardHTML);
+=======
+        let cardTitle = document.getElementById("cardTitel").value;
+        let cardDescription = document.getElementById("cardBesch").value;
+        let buttonLink = document.getElementById("buttonLink").value;
+
+>>>>>>> origin/main
         form.reset();
     });
 });
