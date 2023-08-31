@@ -18,7 +18,7 @@ if(isset($_POST["submit"])){
     if (mail($to, $subject, $message, $headers)) {
         echo "<script>alert('Uw bericht is verzonden.');</script>";
     } else {
-        echo "<script>alert('Uw bericht kon niet worden verzonden. Probeer het later opnieuw!');</script>";
+        echo "<script>alert('Verzending mislukt. Probeer het later opnieuw!');</script>";
     }
 
     $query = "INSERT INTO contactgegevens (Naam, Adres, Telefoonnummer, Email, Vraag) VALUES ('$naam', '$adres', '$telefoonnummer', '$email', '$vraag')";
