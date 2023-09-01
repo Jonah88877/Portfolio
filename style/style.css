@@ -1,9 +1,13 @@
 body {
-    background-image: url("../imgs/18410.jpg");
+    background-color: #FDFFFC;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .active {
-    color: #7976D3;
+    color: rgba(42, 37, 37, 0.42);
     pointer-events: none;
 }
 
@@ -24,9 +28,14 @@ body {
     font-family: "Rockwell";
 }
 
+lanav {
+    background: rgb(0,48,255);
+    background: linear-gradient(90deg, rgba(0,48,255,1) 0%, rgba(0,189,255,1) 100%);
+}
+
 nav {
-    background: rgb(242,242,242);
-    background: linear-gradient(0deg, rgba(242,242,242,0.6363139005602241) 0%, rgba(198,198,198,1) 100%);
+    background: rgb(240,93,35);
+    background: linear-gradient(90deg, rgba(240,93,35,1) 0%, rgba(252,131,31,1) 100%);
 }
 
 .typewriter {
