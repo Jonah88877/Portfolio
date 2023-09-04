@@ -7,7 +7,7 @@ body {
 }
 
 .active {
-    color: rgba(42, 37, 37, 0.42);
+    color: rgb(243, 201, 21);
     pointer-events: none;
 }
 
@@ -24,6 +24,13 @@ body {
     pointer-events: none;
 }
 
+.fotohome {
+    vertical-align: middle;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    pointer-events: none;
+}
 .courier {
     font-family: "Rockwell";
 }
