@@ -1,5 +1,4 @@
 // Wacht tot de pagina geladen is, dan voert die alles uit
-
 document.addEventListener("DOMContentLoaded", function () {
     const cardOutput = document.getElementById("cardOutput");
 
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Checkt of een nieuwe kaart toegevoegt word
     cardForm.addEventListener("submit", function (event) {
         event.preventDefault();
-
         // Ingevulde values slaat die op
         const cardTitel = document.getElementById("cardTitel").value;
         const cardBesch = document.getElementById("cardBesch").value;
@@ -24,18 +22,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Maakt een card met alle info
         const cardHTML = `
-        <div class="col-md-6">
-            <div class="card mb-3">
-                <img src="../imgs/18410.jpg" class="card-img-top" alt="placeholder">
-                <div class="card-body">
-                    <h5 class="card-title">${cardTitel}</h5>
-                    <p class="card-text">${cardBesch}</p>
-                    <a href="${cardLink}" class="btn btn-primary">Naar het project</a>
-                    <button class="btn btn-outline-secondary edit-btn">Bewerken</button>
-                    <button class="btn btn-outline-danger delete-btn">Verwijderen</button>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../imgs/18410.jpg" class="card-img-top" alt="placeholder">
+                    <div class="card-body">
+                        <h5 class="card-title">${cardTitel}</h5>
+                        <p class="card-text">${cardBesch}</p>
+                        <a href="${cardLink}" class="btn btn-primary p-2">Naar het project</a>
+                        <button class="btn btn-outline-secondary edit-btn p-2">Bewerken</button>
+                        <button class="btn btn-outline-danger delete-btn p-2">Verwijderen</button>
+                    </div>
                 </div>
             </div>
-        </div>`;
+        `;
 
         // Voeg cardHTML toe aan de cards in localstorage en sla ze op
         cardStorage.push(cardHTML);
@@ -98,3 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Voegt event listeners toe aan de cards bij het laden van de pagina
     addCardEventListeners();
 });
+
+let testnummers = [1, 2, 3, 4]
+console.log(testnummers);

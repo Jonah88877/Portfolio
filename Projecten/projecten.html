@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,52 +28,26 @@
         </ul>
     </div>
 </nav>
-<div class="container mt-3">
+<div class="container mt-5">
     <p class="h1 text-center courier">Project toevoegen</p>
     <form id="cardForm">
-        <div class="mb-3 ">
+        <div class="mb-3">
             <label for="cardTitel" class="form-label">Titel:</label>
             <input type="text" class="form-control" id="cardTitel" name="cardTitel" required>
         </div>
-        <div class="mb-3 ">
+        <div class="mb-3">
             <label for="cardBesch" class="form-label">Beschrijving:</label>
             <textarea class="form-control" id="cardBesch" name="cardBesch" rows="3" required></textarea>
         </div>
-        <div class="mb-3 ">
+        <div class="mb-3">
             <label for="buttonLink" class="form-label">Link:</label>
             <input type="url" class="form-control" id="buttonLink" name="buttonLink" required>
         </div>
-        <button type="submit" class="btn btn-primary">Toevoegen</button>
+        <button type="submit" class="btn btn-primary p-2">Toevoegen</button>
     </form>
-    <div class="row">
+    <div class="row mt-4" id="cardOutput">
         <p class="h2 text-center courier">Mijn Projecten:</p>
-        <div class="col-md-6">
-            <div class="card mb-3">
-                <img src="../imgs/18410.jpg" class="card-img-top" alt="placeholder">
-                <div class="card-body">
-                    <h5 class="card-title">Titel</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque beatae</p>
-                    <a href="#" class="btn btn-primary">Naar het project</a>
-                    <button class="btn btn-outline-secondary edit-btn">Bewerken</button>
-                    <button class="btn btn-outline-danger delete-btn">Verwijderen</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card mb-3">
-                <img src="../imgs/18410.jpg" class="card-img-top" alt="placeholder">
-                <div class="card-body">
-                    <h5 class="card-title">Titel 2</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque beatae</p>
-                    <a href="#" class="btn btn-primary">Naar het project</a>
-                    <button class="btn btn-outline-secondary edit-btn">Bewerken</button>
-                    <button class="btn btn-outline-danger delete-btn">Verwijderen</button>
-                </div>
-            </div>
-        </div>
-        <div class="row row-cols-2 mt-3 mx-auto" id="cardOutput">
-        </div>
+     </div>
     </div>
-</div>
 </body>
 </html>
