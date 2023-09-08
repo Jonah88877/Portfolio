@@ -98,5 +98,5 @@ document.addEventListener("DOMContentLoaded", function () {
     addCardEventListeners();
 });
 
-let testnummers = [1, 2, 3, 4]
+let testnummers = [1, 2, 3, 4];
 console.log(testnummers);

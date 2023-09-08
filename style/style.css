@@ -32,6 +32,13 @@ body {
     border-radius: 50%;
     pointer-events: none;
 }
+
+@media (max-width: 600px) {
+    #imgRes {
+        display: none;
+    }
+}
+
 .courier {
     font-family: "Rockwell";
 }
@@ -65,4 +72,3 @@ nav {
         width: 100%;
     }
 }
-
