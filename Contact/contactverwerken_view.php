@@ -31,10 +31,10 @@
     <h1>Admin panel contacten</h1>
 
     <?php
-    $result = $db->query("SELECT * FROM contactgegevens");
+    $result = $conn->query("SELECT * FROM Gegevens");
     ?>
 
-    <?php if ($result && $result->numColumns() > 0): ?>
+    <?php if ($result && $result->Columns() > 0): ?>
         <table class="table">
             <thead>
             <tr>
@@ -42,6 +42,7 @@
                 <th scope="col">Naam</th>
                 <th scope="col">Adres</th>
                 <th scope="col">Telefoonnummer</th>
+                <th scope="col">Bedrijfnaam</th>
                 <th scope="col">Email</th>
                 <th scope="col">Vraag</th>
                 <th scope="col">Actie</th>
@@ -55,6 +56,7 @@
                     <td><?= $row['Naam'] ?></td>
                     <td><?= $row['Adres'] ?></td>
                     <td><?= $row['Telefoonnummer'] ?></td>
+                    <td><?= $row['Bedrijfnaam'] ?></td>
                     <td><?= $row['Email'] ?></td>
                     <td><?= $row['Vraag'] ?></td>
                     <td><a class="btn btn-danger" href="contactverwerken_view.php?delete=<?= $row['ID'] ?>">Verwijderen</a></td>
@@ -63,7 +65,7 @@
             </tbody>
         </table>
     <?php endif; ?>
-    <?php $db->close(); ?>
+    <?php $conn->close(); ?>
 
 </div>
 </body>
