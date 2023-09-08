@@ -1,5 +1,4 @@
 <?php
-
 $servername = "localhost:3306"; // Het serveradres
 $username = "epicberoeps"; // Jouw databasegebruikersnaam
 $password = "*v17E4e4k"; // Jouw databasewachtwoord
@@ -40,6 +39,4 @@ if(isset($_POST["submit"])){
     }
 
     $conn->close();
-}
-
-?>
+} ?>
